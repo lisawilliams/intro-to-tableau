@@ -41,6 +41,10 @@
   },
   "license": "MIT",
   "dependencies": {
-    "js-yaml": "^3.13.1"
+    "fstream": "^1.0.12",
+    "js-yaml": "^3.13.1",
+    "morgan": "^1.9.1",
+    "tar": "^4.4.10",
+    "ws": "^7.0.0"
   }
 }
