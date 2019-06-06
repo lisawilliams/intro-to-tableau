@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Data Journalism Basics</title>
+		<title>Intro To Tableau</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/blood.css">
@@ -28,18 +28,16 @@
 			<div class="slides">
 				<section>
 
-					<h3>Data Journalism Basics</h3> with Lisa Williams<br> lisatmh AT gmail dot com<br> @lisawilliams
+					<h3>Intro To Tableau</h3> with Lisa Williams<br> lisatmh AT gmail dot com<br> @lisawilliams
 			<br>
 			<a href="http://tomlinson.org/resume">More on me and my work</a><br>
-			Network: Netgear56-5G-1<br>
-			PWD: vastiris174<br>
 				</section>
 				<section>
 				<section>
 					<h3>Get Ready!</h3>
-					<p>Visit <br><a href ="http://lisawilliams.github.io/visual-thinking">
-						http://lisawilliams.github.io/visual-thinking</a></p>
-						<p>This is where you will find all the links and resources for today's talk.</p>
+					<p>Visit <br><a href ="https://github.com/lisawilliams/intro-to-tableau">
+						https://github.com/lisawilliams/intro-to-tableau</a></p>
+						<p>This is where you will find all the resources for today's lesson.</p>
 				</section>
 
 <section>
@@ -49,22 +47,31 @@
 	If you don't have an .edu address, the free trial is here: <a href="https://www.tableau.com/products/desktop/download">https://www.tableau.com/products/desktop/download</a>
 
 </section>
-<section><h3>Want to see some new stuff?</h3></section>
-<section><H3>Download SQLite Browser</H3><p><a href ="http://sqlitebrowser.org/">http://sqlitebrowser.org</a></section>
+</section>
+<section>
+<section><h3>A Tour of Tableau</h3></section>
+<section><H3>The Start Page And Connecting To Data</H3></section>
+<section><H3>The Data Pane</H3></section>
+<section><H3>Dimensions And Measures</H3></section>
+<section><H3>"Shelves" and "Pills"</H3></section>
+<section><H3>Marks</H3></section>
+<section><H3>Show Me</H3></section>
+<section><H3>Things Tableau Is Good For, And Things Tableau Is Not Good For</H3></section>
 </section>
 
+
 <section>
-	<section><h3>Dealing with Data</h3></section>
-	<section><h3>Grab some data</h3><p>Visit <a href="https://data.boston.gov/dataset/fire-incident-reporting">Boston Fire Incident Reporting</a></p></section>
-	<section><h3>A Little SQL</h3></section>
-	<section><p>SELECT * FROM `fire-incidents-boston` WHERE CitySection = "JP"</p></section>
-	<section><p>Select * FROM `fire-incidents-boston` WHERE CitySection = "JP" AND PropertyDescription = "Multifamily dwelling";
-</p></section>
-<section><p>SELECT * from `fire-incidents-boston` WHERE EstimatedPropertyLoss > "500" and CitySection = "JP" and PropertyDescription = "Multifamily dwelling"
-</p></section>
-<section><h5>Investigating Data Types</h5><p>Click Database Structure > click on table > Modify Table</section>
-<section><p>SELECT * from `fire-incidents-boston` ORDER BY EstimatedPropertyLoss DESC;
-</p></section>
+	<section><h3>Hands On #1: NPR Map</h3></section>
+	<section>
+		<H4>Instructions and Data Files</H4>
+		Instructions and data files for the hands-on portion of this talk
+		can be found here: <br>
+		<a href ="https://lisawilliams.github.io/lisa/tech/2018/03/14/scrape-to-map-tableau-tutorial.html">https://lisawilliams.github.io/lisa/tech/2018/03/14/scrape-to-map-tableau-tutorial.html</a>
+	</section>
+<section><H3>Scraping</H3></section>
+<section><H3>Filtering</H3></section>
+<section><H3>Color</H3></section>
+<section><H3>Geocoding and Its Discontents</H3></section>
 </section>
 
 
@@ -72,7 +79,7 @@
 
 <section>
 				<section>
-					<h3>A Brief History Of Data Visualization</h3>
+					<h3>A Brief History Of 5,000 Years of Data Visualization</h3>
 				</section>
 
 <section>
@@ -126,24 +133,7 @@
 			<img src = "images_rightsize/IBM-2250-1970.png">
 		</section>
 
-</section>
 
-				<section>
-					<section>
-
-					<h3>Hands-On: <Br>Scraping Data</h3>
-					</section>
-					<section>
-						<H4>Instructions and Data Files</H4>
-						Instructions and data files for the hands-on portion of this talk
-						can be found here: <br>
-						<a href ="https://lisawilliams.github.io/lisa/tech/2018/03/14/scrape-to-map-tableau-tutorial.html">https://lisawilliams.github.io/lisa/tech/2018/03/14/scrape-to-map-tableau-tutorial.html</a>
-					</section>
-					</section>
-
-
-
-<section>
 				<section>
 					<h3>Thinking Visually</h3>
 				</section>
@@ -185,10 +175,6 @@
 				</section>
 
 				<section>
-					<h3> Good Chart, Bad Chart</h3>
-				</section>
-
-				<section>
 					<img src = "images_rightsize/cleveland-chart.png">
 				</section>
 
@@ -218,16 +204,48 @@
 				<section>
 					<section>
 
-					<h3>Hands-On: <br>From Scrape to Map</h3>
+					<h3>Hands-On #2: A Person In Five Charts</h3>
 					</section>
-					<section>
-						<H4>Instructions and Data Files</H4>
-						Instructions and data files for the hands-on portion of this talk
-						can be found here: <br>
-						<a href ="https://lisawilliams.github.io/lisa/tech/2018/03/14/scrape-to-map-tableau-tutorial.html">https://lisawilliams.github.io/lisa/tech/2018/03/14/scrape-to-map-tableau-tutorial.html</a>
+
+					<section><H3>Chart Types</H3></section>
+					<section><H3>Different Datasets In The Same Workbook</H3></section>
+					<section><H3>Labels And Text</H3></section>
+					<section><H3>Sorting</H3></section>
+					<section><H3>Axes</H3></section>
+
 					</section>
-					</section>
-				</section>
+
+
+						<section>
+						<h3>Break: 10 Minutes</h3>
+						</section>
+
+						<section>
+							<section>
+
+							<h3>Hands-On #3: More Complex Mapping</h3>
+							<h5> ICE Expenditures</h5>
+							</section>
+
+							<section><H3>Marks: Size of Bubbles</H3></section>
+							<section><H3>User Controls: Search, Type, Location and More</H3></section>
+							<section><H3>Data Extracts</H3></section>
+							<section><H3>Tableau Reader and Tableau Online</H3></section>
+							</section>
+
+							<section>
+								<section>
+
+								<h3>Hands-On #4: Scatterplot</h3>
+								<h5>MCAS Test Scores v. Per-Pupil Expenditure</h5>
+								</section>
+
+								<section><H3>Tooltips</H3></section>
+								<section><H3>Calculated Fields</H3></section>
+
+
+								</section>
+
 
 <section>
 				<section>
