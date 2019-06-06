@@ -1,0 +1,331 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Data Journalism Basics</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/blood.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+
+					<h3>Data Journalism Basics</h3> with Lisa Williams<br> lisatmh AT gmail dot com<br> @lisawilliams
+			<br>
+			<a href="http://tomlinson.org/resume">More on me and my work</a><br>
+			Network: Netgear56-5G-1<br>
+			PWD: vastiris174<br>
+				</section>
+				<section>
+				<section>
+					<h3>Get Ready!</h3>
+					<p>Visit <br><a href ="http://lisawilliams.github.io/visual-thinking">
+						http://lisawilliams.github.io/visual-thinking</a></p>
+						<p>This is where you will find all the links and resources for today's talk.</p>
+				</section>
+
+<section>
+	<h3>Download Tableau</h3>
+	<p>If you haven't done so already, download Tableau.</p>
+	If you have an .edu address: <a href ="http://tableau.com/academic/students">tableau.com/academic/students</a><br>
+	If you don't have an .edu address, the free trial is here: <a href="https://www.tableau.com/products/desktop/download">https://www.tableau.com/products/desktop/download</a>
+
+</section>
+<section><h3>Want to see some new stuff?</h3></section>
+<section><H3>Download SQLite Browser</H3><p><a href ="http://sqlitebrowser.org/">http://sqlitebrowser.org</a></section>
+</section>
+
+<section>
+	<section><h3>Dealing with Data</h3></section>
+	<section><h3>Grab some data</h3><p>Visit <a href="https://data.boston.gov/dataset/fire-incident-reporting">Boston Fire Incident Reporting</a></p></section>
+	<section><h3>A Little SQL</h3></section>
+	<section><p>SELECT * FROM `fire-incidents-boston` WHERE CitySection = "JP"</p></section>
+	<section><p>Select * FROM `fire-incidents-boston` WHERE CitySection = "JP" AND PropertyDescription = "Multifamily dwelling";
+</p></section>
+<section><p>SELECT * from `fire-incidents-boston` WHERE EstimatedPropertyLoss > "500" and CitySection = "JP" and PropertyDescription = "Multifamily dwelling"
+</p></section>
+<section><h5>Investigating Data Types</h5><p>Click Database Structure > click on table > Modify Table</section>
+<section><p>SELECT * from `fire-incidents-boston` ORDER BY EstimatedPropertyLoss DESC;
+</p></section>
+</section>
+
+
+</section>
+
+<section>
+				<section>
+					<h3>A Brief History Of Data Visualization</h3>
+				</section>
+
+<section>
+	<h6>3500 BCE</h6>
+	<img src = "images_rightsize/cuneiform-tablet.png">
+</section>
+
+<section>
+	<img src = "images_rightsize/treemap.png">
+</section>
+
+<section>
+		<h6>3100 BCE</h6>
+	<img src = "images_rightsize/stonehenge.png">
+</section>
+
+	<section>
+			<h6>500 BCE</h6>
+		<img src = "images_rightsize/roundmap.png">
+	</section>
+
+		<section>
+				<h6>1525 CE</h6>
+			<img src = "images_rightsize/first-timeline.png">
+		</section>
+
+		<section>
+				<h6>1821 BCE</h6>
+			<img src = "images_rightsize/playfair-column-chart.png">
+		</section>
+
+		<section>
+			<img src = "images_rightsize/playfair-pie-chart.png">
+		</section>
+
+		<section>
+				<h6>1855 CE</h6>
+			<img src = "images_rightsize/coxcomb.png">
+		</section>
+
+		<section>
+				<h6>1875 CE</h6>
+			<img src = "images_rightsize/3d-chart-1879.png">
+		</section>
+		<section>
+				<h6>1963 CE</h6>
+			<img src = "images_rightsize/sketchpad-mit-1963.png">
+		</section>
+		<section>
+				<h6>1970 CE</h6>
+			<img src = "images_rightsize/IBM-2250-1970.png">
+		</section>
+
+</section>
+
+				<section>
+					<section>
+
+					<h3>Hands-On: <Br>Scraping Data</h3>
+					</section>
+					<section>
+						<H4>Instructions and Data Files</H4>
+						Instructions and data files for the hands-on portion of this talk
+						can be found here: <br>
+						<a href ="https://lisawilliams.github.io/lisa/tech/2018/03/14/scrape-to-map-tableau-tutorial.html">https://lisawilliams.github.io/lisa/tech/2018/03/14/scrape-to-map-tableau-tutorial.html</a>
+					</section>
+					</section>
+
+
+
+<section>
+				<section>
+					<h3>Thinking Visually</h3>
+				</section>
+
+				<section>
+					<img src = "images_rightsize/cleveland-chart.png">
+				</section>
+
+				<section>
+					<img src = "images_rightsize/pie-chart-right.png">
+				</section>
+
+				<section>
+					<img src = "images_rightsize/pie-chart-wrong.png">
+				</section>
+
+				<section>
+					<img src = "images_rightsize/bar-chart-bad.png">
+				</section>
+
+				<section>
+					<img src = "images_rightsize/bar-chart-good.png">
+				</section>
+
+				<section>
+					<img src = "images_rightsize/too-many-lines.png">
+				</section>
+
+				<section>
+					<img src = "images_rightsize/bar-chart-bad.png">
+				</section>
+
+				<section>
+					<img src = "images_rightsize/bar-chart-grouping.png">
+				</section>
+
+				<section>
+					<img src = "images_rightsize/sparklines.png">
+				</section>
+
+				<section>
+					<h3> Good Chart, Bad Chart</h3>
+				</section>
+
+				<section>
+					<img src = "images_rightsize/cleveland-chart.png">
+				</section>
+
+				<section>
+					<img src = "images_rightsize/bubble-chart.png">
+				</section>
+
+				<section>
+					<img src = "images_rightsize/facebook-linechart.png">
+				</section>
+
+				<section>
+					<img src = "images_rightsize/treemap.png">
+				</section>
+
+				<section>
+					<img src = "images_rightsize/scatterplot.png">
+				</section>
+
+				<section>
+					<img src = "images_rightsize/node-chart.png">
+				</section>
+
+</section>
+
+
+				<section>
+					<section>
+
+					<h3>Hands-On: <br>From Scrape to Map</h3>
+					</section>
+					<section>
+						<H4>Instructions and Data Files</H4>
+						Instructions and data files for the hands-on portion of this talk
+						can be found here: <br>
+						<a href ="https://lisawilliams.github.io/lisa/tech/2018/03/14/scrape-to-map-tableau-tutorial.html">https://lisawilliams.github.io/lisa/tech/2018/03/14/scrape-to-map-tableau-tutorial.html</a>
+					</section>
+					</section>
+				</section>
+
+<section>
+				<section>
+					<h3>Charts On The Dark Side</h3>
+					<p>How To Spot <br>Manipulative and Deceptive <br>Charts and Graphs</p>
+				</section>
+
+				<section>
+					<img src = "images_rightsize/nonzero-one.png">
+				</section>
+
+				<section>
+					<img src = "images_rightsize/nonzero-two.png">
+				</section>
+
+				<section>
+					<img src = "images_rightsize/scale-one.png">
+				</section>
+
+				<section>
+					<img src = "images_rightsize/scale-two.png">
+				</section>
+
+				<section>
+					<img src = "images_rightsize/fox-four.png">
+				</section>
+
+				<section>
+					<h3>Good Chart, Bad Chart</h3>
+				</section>
+
+				<section>
+					<img src = "images_rightsize/fox-one.png">
+				</section>
+
+				<section>
+					<img src = "images_rightsize/upside-down-axis.png">
+				</section>
+
+				<section>
+					<img src = "images_rightsize/bad-arc-chart.png">
+				</section>
+
+				<section>
+					<img src = "images_rightsize/75-million.png">
+				</section>
+
+				<section>
+					<img src = "images_rightsize/pac-man.png">
+				</section>
+
+
+
+</section>
+
+<!-- End Section Slides -->
+				<section>
+								<h3> Q&A</h3>
+							</section>
+							<section>
+								<h3>Thanks</h3>
+							</section>
+							<section>
+							<section>
+								<h3> Questions?</h3> Reach Lisa Williams<br> lisatmh AT gmail dot com<br> @lisawilliams
+								<br>
+								<a href="http://tomlinson.org/resume">More on me and my work</a><br>
+								<a href="http://lisawilliams.github.io/data-journalism-basics">http://lisawilliams.github.io/data-journalism-basics</a>
+							</section>
+							<section>
+				<h3>How this presentation was made </h3>
+				This presentation was made using Reveal.js, a framework for making HTML slide presentations; Reveal.js is a Node.js application.
+				For more details, visit the repository for this application at <a href ="https://github.com/lisawilliams/visual-thinking">https://github.com/lisawilliams/visual-thinking</a><br>
+				You can always find this presentation and its resources at <a href="http://lisawilliams.github.io/data-journalism-basics">http://lisawilliams.github.io/data-journalism-basics</a>
+
+							</section>
+						</section>
+
+
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
